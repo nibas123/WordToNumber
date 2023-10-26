@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordToNumber.ConvertPage"
+             Title="ConvertPage">
+    <StackLayout>
+        <Label Text="Convert Number to Words" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="numberEntry" Placeholder="Enter a number" />
+        <Button Text="Convert" Clicked="OnConvertClicked" />
+        <Label x:Name="resultLabel" Text="" />
+    </StackLayout>
+</ContentPage>
