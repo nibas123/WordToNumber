@@ -8,7 +8,10 @@
         {
             InitializeComponent();
         }
-
+        private void OnNavigateToConvertPageClicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new ConvertPage());
+        }
         private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;
