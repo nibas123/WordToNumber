@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WordToNumber.ConvertPage"
              Title="ConvertPage">
-    <StackLayout>
-        <Label Text="Convert Number to Words" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
-        <Entry x:Name="numberEntry" Placeholder="Enter a number" />
-        <Button Text="Convert" Clicked="OnConvertClicked" />
-        <Label x:Name="resultLabel" Text="" />
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+        <Label Text="Convert Number to Words" FontSize="24" TextColor="#2196F3" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+        <Entry x:Name="numberEntry" Placeholder="Enter a number" Keyboard="Numeric" FontSize="20" Margin="0,0,0,10" />
+
+        <Button Text="Convert" Clicked="OnConvertClicked" BackgroundColor="#2196F3" TextColor="White" FontSize="20" CornerRadius="5" />
+
+        <Label x:Name="resultLabel" Text="" FontSize="20" TextColor="#333" Margin="0,20,0,0" HorizontalOptions="Center" />
     </StackLayout>
 </ContentPage>
